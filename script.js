@@ -13,8 +13,13 @@ clickDisplay.innerText = "Clicks: " + clicks;
 function handleClick() {
     console.log("click");
 
-    // Count the click 
-    clicks = clicks + 1;
-    // Update display with new value
-    clickDisplay.innerText = "Clicks: " + clicks;
+   // Count the click
+   clicks = clicks + 1;
+
+   // Update display with new value
+   clickDisplay.innerText = "Clicks: " + clicks;
+
+   if (clicks == 10) {
+        alert("Congratulations you reached 10 clicks, you're at level 2!")
+   }
 }
